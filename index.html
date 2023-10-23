@@ -197,7 +197,8 @@ body{
   padding:10px;
   height:35px;
   border-radius: 15px;
-  background-color: white;
+  background-color: black;
+  color:white;
   
 }
 
@@ -253,6 +254,18 @@ font-size:100px;
     justify-content: space-evenly;
     align-items: center;
   }
+  
+  .box3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .boxone{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
 }
 
 .interest{
@@ -270,33 +283,35 @@ padding:10px;
 .int1{
   margin:auto;
   width:300px;
-  border:2px solid white;
+  border:2px solid purple;
   padding:
   margin-bottom:15px;
   border-radius:10px;
   padding-bottom:20px;
-  
+  margin-bottom:15px;
+  margin-top:20px;
 }
 
 .int2{
   margin:auto;
   width:300px;
-  border:2px solid white;
+  border:2px solid purple;
   padding:
   margin-bottom:15px;
   border-radius:10px;
   padding-bottom:20px;
+  margin-bottom:15px;
   
 }
 .int3{
   margin:auto;
   width:300px;
-  border:2px solid white;
+  border:2px solid purple;
   padding:
   margin-bottom:15px;
   border-radius:10px;
   padding-bottom:20px;
-  
+  margin-bottom: 15px;
 }
 
 
@@ -305,25 +320,98 @@ padding:10px;
   margin:auto;
   width:300px;
   height:200px;
-  background-color: red;
+  background-color: green;
+  border-radius:10px;
+  background-image:url("image/techbg.jpg");
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  animation: slider 15sec infinite linear;
 }
+
+@keyframes slider{
+    0%{background-image: url('image/bg1.jpg')}
+    25%{background-image: url('image/bg2.jpg')}
+    50%{background-image: url('image/bg3.jpg')}
+    75%{background-image: url('image/bg4.jpg')}
+  }
+
+
 .int2-2 {
   margin: auto;
   width: 300px;
   height: 200px;
   background-color: red;
+  border-radius:10px;
+    background-image:url("image/bg1.jpg");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
 }
 .int3-3 {
   margin: auto;
   width: 300px;
   height: 200px;
-  background-color: red;
+  background-color:purple;
+  border-radius:10px;
+    background-image:url("image/bg2.jpg");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
 }
 
-.box2{
+.skills{
+  padding:10px;
+  margin-top:20px;
+  width:100%;
+  margin-left:10px;
+  margin-right:10px;
+  background-color:#E5E5E5;
+  color:purple;
+}
+
+.skills1{
+    margin:auto;
+  width:300px;
+  border:2px solid purple;
+  padding:20px;
+  margin-bottom:15px;
+  border-radius:100px;
   
 }
 
+.skills1 i{
+  font-size:100px;
+  margin-bottom: 20px;
+}
+
+.skills2{
+    margin:auto;
+  width:300px;
+  border:2px solid purple;
+  padding:20px;
+  margin-bottom:15px;
+  border-radius:100px;
+  
+}
+.skills2 i {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+
+.skills3 {
+  margin: auto;
+  width: 300px;
+  border: 2px solid purple;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 100px;
+
+}
+
+
+.skills3 i {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
 
   </style>
 </head>
@@ -439,13 +527,12 @@ padding:10px;
     </center>
   </div>
   <div class="work">
-    
     <br>
     <center>
       <h5><u>WORK EXPERIENCE</u></h5>
     </center>
     <div class="box1">
-    <div class="exp1">
+    <div class="exp1" id="exp">
       <center>
         <i class="fas fa-network-wired"></i><br>
         <h5>Junior Network Engineer</h5><br>
@@ -454,7 +541,7 @@ padding:10px;
       </center>
     
     </div>
-    <div class="exp2">
+    <div class="exp2" id="csr">
     <center>
         <i class="fas fa-user-tie"></i><br>
         <h5>CSR (SALES)</h5><br>
@@ -463,7 +550,7 @@ padding:10px;
       </center>
       
     </div>
-    <div class="exp3">
+    <div class="exp3" id="exp3">
       <center>
         <i class="fas fa-users"></i>
         <br>
@@ -485,7 +572,7 @@ padding:10px;
         
       </div>
       <center>
-      <h4>CODING</h4>
+      <h5>CODING</h5>
       </center>
     </div>
     <div class="int2">
@@ -493,7 +580,7 @@ padding:10px;
     
     </div>
     <center>
-      <h4>TRAVELING</h4>
+      <h5>TRAVELING</h5>
     </center>
     </div>
     <div class="int3">
@@ -501,9 +588,37 @@ padding:10px;
     
     </div>
     <center>
-      <h4>SCI-FI MOVIES</h4>
+      <h5>SCI-FI MOVIES</h5>
     </center>
     </div>
+    </div>
+  </div>
+  <div class="skills">
+    <center>
+      <h6 id="h">SKILLS</h6>
+    </center>
+    <div class="box3">
+    <div class="skills1">
+      <center>
+        <i class="fas fa-tasks"></i><br>
+        <h5>MANAGEMENT SKILLS </h5><br>
+      </center>
+    
+    </div>
+    <div class="skills2">
+      <center>
+        <i class="fas fa-cogs"></i>
+        <br>
+        <h5>PROBLEM SOLVING SKILL </h5><br>
+      </center>
+    </div>
+  </div><br>
+  <div class="boxone">
+    <div class="skills3">
+      <center><i class="fas fa-microphone"></i>
+        <br>
+        <h5>COMMUNICATION SKILLS</h5><br>
+      </center>
     </div>
   </div>
 
@@ -528,6 +643,62 @@ padding:10px;
      sidebar.style.display="none";
    }
    
+  //Work section logics .
+  
+  const card = document.getElementById("exp");
+  
+  function work(){
+    card.style.backgroundColor="white";
+    card.style.color="purple";
+  }
+  
+  function worK(){
+   card.style.backgroundColor="purple";
+    card.style.color="white";
+  
+  }
+  
+  card.addEventListener("mouseover",work);
+  card.addEventListener("mouseout",worK);
+  
+  //work 2 card logics 
+   const sales = document.getElementById("csr");
+   //console.log(csr);
+   
+   function magic() {
+     sales.style.backgroundColor = "white";
+     sales.style.color = "purple";
+   }
+   
+   function magiC() {
+     sales.style.backgroundColor = "purple";
+     sales.style.color = "white";
+   
+   }
+   
+   csr.addEventListener("mouseover",magic);
+  csr.addEventListener("mouseout",magiC);
+  
+  
+  // work 3 card logics
+  
+  const tl = document.getElementById("exp3");
+  //console.log(tl);
+  
+  function jadu(){
+    tl.style.backgroundColor="white";
+     tl.style.color = "purple";
+  }
+  
+  function jadU(){
+    tl.style.backgroundColor="purple";
+     tl.style.color = "white";
+  }
+  
+   tl.addEventListener("mouseover",jadu);
+  tl.addEventListener("mouseout",jadU);
+  
+  
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
