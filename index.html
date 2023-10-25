@@ -131,13 +131,17 @@ body{
 
 
 .intro{
-  padding:10px;
   margin-top:20px;
   height:250px;
   width:100%;
-  margin-left:10px;
-  margin-right:10px;
   background-color:#E5E5E5;
+  position:relative;
+}
+
+.intro video{
+  position:absolute;
+  left:0px;
+  top:15px;
 }
 
 #h{
@@ -275,8 +279,15 @@ font-size:100px;
   
  .intro{
    width:50%;
+   position:relative;
  }
- 
+
+.intro video{
+  position:absolute;
+  left:50px;
+  top:10px;
+}
+
  .who{
    margin-top:20px;
    width:50%;
@@ -509,7 +520,10 @@ padding:10px;
   <div class="box4">
   <div class="intro">
     <center>
-    <h6 id="h">INTRODUCTION</h6>
+    <h6 id="h">INTRODUCTION</h6><br><center>
+    <video controls width="360px" height="250px">
+      <source src="image/intro.mp4" type="video/mp4">
+    </video>
     </center>
   </div><br>
   <div class="who">
