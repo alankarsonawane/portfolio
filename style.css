@@ -359,7 +359,7 @@ font-family:fantasy;
   height: 200px;
   background-color: red;
   border-radius:10px;
-    background-image:url("image/bg1.jpg");
+    background-image:url("image/travel.jpg");
     background-size: 100% 100%;
     background-repeat:no-repeat;
 }
@@ -369,7 +369,7 @@ font-family:fantasy;
   height: 200px;
   background-color:purple;
   border-radius:10px;
-    background-image:url("image/bg2.jpg");
+    background-image:url("image/scifi.jpg");
     background-size: 100% 100%;
     background-repeat:no-repeat;
 }
